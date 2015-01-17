@@ -1,7 +1,8 @@
 @import "bootstrap"
 @import url(http://fonts.googleapis.com/css?family=Raleway:500,700,400,300)
 
-
+body
+  background-color: #f5f5f5
 
 *
   font-weight: 200
@@ -11,8 +12,11 @@
 
 .main
   margin-bottom: 50px
-  padding-top: 40px
+  padding: 40px 0 
   overflow: hidden
+  background-color: white
+  position: relative
+  top: -210px
   p
     font-size: 16px
     color: #666
@@ -27,6 +31,14 @@
 
 nav
   background-color: rgba(255, 255, 255, 0.97) !important
+
+.navbar-inverse .navbar-nav > .active > a
+  background-color: #6ccaca
+  color: white
+
+.navbar-inverse .navbar-nav > .active > a:hover
+  background-color: #6ccaca
+
 
 .logo
   width: 40px
@@ -47,14 +59,19 @@ nav
 .navbar-inverse .navbar-brand, .navbar-inverse .navbar-nav > li > a
   color: #6ccaca
 
+.navbar-inverse .navbar-nav > li > a:hover
+  color: #6ccaca
+
+
+
+
 .navbar-inverse .navbar-brand
   font-family: 'Raleway', sans-serif
 
-.nav
-  border-bottom: 2px
 
 .navbar-inverse
-  border-color: #eee !important
+  border-bottom: 3px solid #eee !important
+  // border-color: #eee !important
 
 
 /*
@@ -95,7 +112,7 @@ nav
 
 .nav-tabs > li > a:hover
   color: #333
-  border-radius: 5px
+  border-radius: 0px
 
 .tabs-left, .tabs-right
   border-bottom: none
@@ -114,11 +131,10 @@ nav
 
 
 .nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus
-  border-radius: 0px
   border: none 
   color: white
   background-color: #6ccaca
-  border-radius: 5px
+  border-radius: 0px
 
 .tabs-left > li > a
   margin-right: 0
@@ -178,7 +194,7 @@ nav
  */
 
 .banner
-  padding: 100px 0 80px 0
+  padding: 120px 0 300px 0
   h1, h2
     color: white
     font-family: 'Raleway', sans-serif
@@ -195,9 +211,9 @@ nav
  */
 
 .assignments-container
-  a
+  padding-right: 24px
+  .panel-group .panel
     margin-bottom: 12px
-
 
 /*
  *
@@ -208,6 +224,58 @@ nav
 .btn-custom
   padding: 2px 16px
   margin-top: -3px
+  background-color: #31bf37
+  border-color: #31bf37
+  &:hover
+    background-color: darken(#31bf37, 10%)
+    border-color: darken(#31bf37, 10%)
+
+
+
+/*
+ *
+ * Animation 
+ *
+ */
+
+.ruby
+  position: absolute
+  right: 160px
+  width: 200px
+  height: 149px
+  -webkit-animation: float ease 2s infinite
+  -moz-animation: float ease 2s infinite
+  -ms-animation: float ease 2s infinite
+  animation: float ease 2s infinite
+  
+@-webkit-keyframes float 
+  0%
+    top: 0px
+  50% 
+    top: 5px 
+  100% 
+    top: 0px 
+@-moz-keyframes float 
+  0%
+    top: 0px
+  50%
+    top: 5px 
+  100% 
+    top: 0px 
+@-ms-keyframes float 
+  0%
+    top: 0px
+  50% 
+    top: 5px 
+  100% 
+    top: 0px 
+@keyframes float 
+  0%
+    top: 0px
+  50% 
+    top: 5px 
+  100% 
+    top: 0px 
 
 
 
