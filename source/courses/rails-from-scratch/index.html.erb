@@ -1,98 +1,61 @@
+---
+title: Ruby on Rails From Scratch
+slogan: Learn to build your own app from scratch!
+---
 
-<nav class="navbar navbar-inverse navbar-fixed-top">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="#">Project name</a>
-    </div>
-    <div id="navbar" class="navbar-collapse collapse">
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#">Dashboard</a></li>
-        <li><a href="#">Settings</a></li>
-        <li><a href="#">Profile</a></li>
-        <li><a href="#">Help</a></li>
-      </ul>
-      <form class="navbar-form navbar-right">
-        <input type="text" class="form-control" placeholder="Search...">
-      </form>
-    </div>
-  </div>
-</nav>
+<%= partial "navigation" %>
 
-<h1>
-  Course Name
-</h1>
+<div class="banner" style="background-color: #6ccaca;">
 
-<div class="main">
+<div class="container">
+  <h1>
+    <%= current_page.data.title %>
+  </h1>
+   <h2>
+      <%= current_page.data.slogan %>
+    </h2> 
+</div>
+</div>
+
+<div class="main container ">
   <div class="row"> 
-    <div class="col-sm-3 delete-padding" style="height: 600px; background-color: #eee;"> <!-- required for floating -->
+
+
+    <div class="col-sm-2"> <!-- required for floating -->
         <!-- Nav tabs -->
         <ul class="nav nav-tabs tabs-left">
-          <li class="active"><a href="#home" data-toggle="tab">Level</a></li>
-          <li><a href="#profile" data-toggle="tab">Level</a></li>
-          <li><a href="#messages" data-toggle="tab">Level</a></li>
-          <li><a href="#settings" data-toggle="tab">Level</a></li>
-          <li><a href="#options" data-toggle="tab">Level</a></li>
+          <li class="active"><a href="#home" data-toggle="tab">Intro</a></li>
+          <li><a href="#profile" data-toggle="tab">Level 1: Models</a></li>
+          <li><a href="#messages" data-toggle="tab">Level 2: Views</a></li>
+          <li><a href="#settings" data-toggle="tab">Level 3: Controllers</a></li>
+          <li><a href="#options" data-toggle="tab">Level 4: Routes</a></li>
         </ul>
     </div>
-
-    <div class="col-sm-9">
+    <div class="col-sm-6">
         <!-- Tab panes -->
         <div class="tab-content">
           <div class="tab-pane active" id="home">
-            <center>
-            <iframe width="560" height="315" src="//www.youtube.com/embed/Ub63J793vqo" frameborder="0" allowfullscreen>
-            </iframe>
-            </center>
-            <br>
-            <div class="bs-example" data-example-id="hoverable-table">
-                <table class="table table-hover">
-                  <thead>
-                    <tr>
-                      <th>#</th>
-                      <th>First Name</th>
-                      <th>Last Name</th>
-                      <th>Username</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <th scope="row">1</th>
-                      <td>Mark</td>
-                      <td>Otto</td>
-                      <td>@mdo</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">2</th>
-                      <td>Jacob</td>
-                      <td>Thornton</td>
-                      <td>@fat</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">3</th>
-                      <td>Larry</td>
-                      <td>the Bird</td>
-                      <td>@twitter</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-
-
-
-
+            <%= partial "lesson01" %>
           </div>
-          <div class="tab-pane" id="profile">Profile Tab.</div>
-          <div class="tab-pane" id="messages">Messages Tab.</div>
-          <div class="tab-pane" id="settings">Settings Tab.</div>
-          <div class="tab-pane" id="options">Options Tab.</div>
+          <div class="tab-pane" id="profile"><%= partial "lesson02" %></div>
+          <div class="tab-pane" id="messages"><%= partial "lesson03" %></div>
+          <div class="tab-pane" id="settings"><%= partial "lesson04" %></div>
+          <div class="tab-pane" id="options"><%= partial "lesson05" %></div>
         </div>
+    </div>
+
+    <div class="col-sm-4">
+      <div class="assignments-container">
+
+      <%= partial "assignments" %>
+
+      </div>
     </div> 
+
+
+
+
+
   </div> 
 
 </div>

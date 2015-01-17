@@ -1,12 +1,60 @@
 @import "bootstrap"
+@import url(http://fonts.googleapis.com/css?family=Raleway:500,700,400,300)
 
-body
-  padding-top: 50px
+
+
+*
+  font-weight: 200
+
+.maximize-height
+  height: 100%
 
 .main
   margin-bottom: 50px
+  padding-top: 40px
   overflow: hidden
+  p
+    font-size: 16px
+    color: #666
 
+
+/*
+ *
+ * Navbar  
+ *
+ */
+
+
+nav
+  background-color: rgba(255, 255, 255, 0.97) !important
+
+.logo
+  width: 40px
+  height: 40px
+  margin-top: -10px
+
+
+.panel-default
+  border-color: #efefef
+
+.panel-default > .panel-heading
+  background-color: #efefef
+  border-color: #efefef
+
+.panel-default > .panel-heading + .panel-collapse > .panel-body
+  border-color: #efefef
+
+.navbar-inverse .navbar-brand, .navbar-inverse .navbar-nav > li > a
+  color: #6ccaca
+
+.navbar-inverse .navbar-brand
+  font-family: 'Raleway', sans-serif
+
+.nav
+  border-bottom: 2px
+
+.navbar-inverse
+  border-color: #eee !important
 
 
 /*
@@ -24,7 +72,6 @@ body
  * Background  
  *
  */
-
 
 
 .bg-upper
@@ -47,9 +94,8 @@ body
   border: none
 
 .nav-tabs > li > a:hover
-  border-radius: 0px !important
-  color: blue
-  background-color: orange
+  color: #333
+  border-radius: 5px
 
 .tabs-left, .tabs-right
   border-bottom: none
@@ -70,13 +116,14 @@ body
 .nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus
   border-radius: 0px
   border: none 
-  color: blue
-  background-color: transparent
-  background-color: red
+  color: white
+  background-color: #6ccaca
+  border-radius: 5px
 
 .tabs-left > li > a
   margin-right: 0
   display: block
+  color: #6ccaca
 
 .sideways
   margin-top: 50px
@@ -104,4 +151,63 @@ body
     -ms-transform: rotate(-90deg)
     -o-transform: rotate(-90deg)
     transform: rotate(-90deg)
+
+/*
+ *
+ * Video   
+ *
+ */
+
+
+.video-wrapper
+  position: relative
+  padding-bottom: 56.25%
+  padding-top: 25px
+  height: 0
+  iframe
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100% 
+
+/*
+ *
+ * Banner  
+ *
+ */
+
+.banner
+  padding: 100px 0 80px 0
+  h1, h2
+    color: white
+    font-family: 'Raleway', sans-serif
+
+  h2
+    margin-top: 4px
+
+
+
+/*
+ *
+ * Assignments Container  
+ *
+ */
+
+.assignments-container
+  a
+    margin-bottom: 12px
+
+
+/*
+ *
+ * Buttons  
+ *
+ */
+
+.btn-custom
+  padding: 2px 16px
+  margin-top: -3px
+
+
 
