@@ -41,17 +41,19 @@
 # end
 
 # Methods defined in the helpers block are available in templates
-# helpers do
-#   def some_helper
-#     "Helping"
-#   end
-# end
+helpers do
+  def courses
+    ["Ruby Basics", "HTML & CSS", "Javascript The Best Parts"]
+  end
+end
 
 set :css_dir, 'stylesheets'
 
 set :js_dir, 'javascripts'
 
 set :images_dir, 'images'
+
+activate :directory_indexes
 
 # Build-specific configuration
 configure :build do
