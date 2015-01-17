@@ -43,7 +43,20 @@
 # Methods defined in the helpers block are available in templates
 helpers do
   def courses
-    ["Ruby Basics", "HTML & CSS", "Javascript The Best Parts"]
+   
+      {
+        
+    
+       "Ruby Journey" => {header: 'Learn the Ruby Programming Language and related technologies',
+        image: '', content: '<ul><li></li></ul>'}  , 
+      "Educational Journey" => {header: 'Learn technologies useful in an educational environment',
+        image: '', content: '<ul><li></li></ul>'}, 
+       "HTML & CSS" => {header: 'Learn the essentials of web design',
+        image: '', content: '<ul><li></li></ul>'}, 
+        "Javascript The Best Parts" => {header: 'Learn to program the web with Javascript',
+        image: '', content: '<ul><li></li></ul>'}
+      }
+    
   end
 end
 
