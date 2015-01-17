@@ -1,1 +1,107 @@
 @import "bootstrap"
+
+body
+  padding-top: 50px
+
+.main
+  margin-bottom: 50px
+  overflow: hidden
+
+
+
+/*
+ *
+ * Helper  
+ *
+ */
+
+.delete-padding
+  padding: 0px !important
+
+
+/*
+ *
+ * Background  
+ *
+ */
+
+
+
+.bg-upper
+  background-color: #eee
+  height: 250px
+
+.bg-below
+  background-color: #3498db
+
+
+
+/*
+ *
+ * Accordion  
+ *
+ */
+
+.nav-tabs > li > a
+  padding-left: 30px
+
+.nav-tabs > li > a:hover
+  border-radius: 0px !important
+  width: 100% !important
+  color: blue
+  border: none !important
+
+
+.tabs-left, .tabs-right
+  border-bottom: none
+  padding-top: 2px
+
+.tabs-left
+//   border-right: none
+  background-color: #eee
+
+.tabs-left > li, .tabs-right > li
+  float: none
+
+.tabs-left > li
+
+.tabs-right > li
+
+
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus
+  border-radius: 0px
+  border: none 
+  color: blue
+  background-color: transparent
+
+.tabs-left > li > a
+  margin-right: 0
+  display: block
+
+.sideways
+  margin-top: 50px
+  border: none
+  position: relative
+  > li
+    height: 20px
+    width: 120px
+    margin-bottom: 100px
+    > a
+      text-align: center
+  &.tabs-left
+    left: -50px
+  &.tabs-right
+    right: -50px
+    > li
+      -webkit-transform: rotate(90deg)
+      -moz-transform: rotate(90deg)
+      -ms-transform: rotate(90deg)
+      -o-transform: rotate(90deg)
+      transform: rotate(90deg)
+  &.tabs-left > li
+    -webkit-transform: rotate(-90deg)
+    -moz-transform: rotate(-90deg)
+    -ms-transform: rotate(-90deg)
+    -o-transform: rotate(-90deg)
+    transform: rotate(-90deg)
+
