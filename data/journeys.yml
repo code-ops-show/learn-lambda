@@ -1,50 +1,54 @@
-
 google:
   name: Google Journey
   header: Learn technologies for a career with Google
   image: /images/google.png
-  content: <ul><li>The Go programming language</li><li>BigTable</li><li>AngularJS</li><li>Google App Engine</li></ul>
-  
+  content: 
+    - The Go programming language
+    - BigTable
+    - AngularJS
+    - Google App Engine
+
 ms:
   name: Microsoft Journey
   header: Learn technologies for a career with Microsoft
   image: /images/ms.jpg
-  content: <ul><li>.Net</li><li>C#</li><li>Visual Basic</li></ul>
-      
-oracle:
-  name:  Oracle Journey
-  header: Learn technologies for a career with Oracle
-  image: /images/oracle.jpg
-  content: <ul><li>E-Business Suite</li><li>PeopleSoft</li><li>Siebel</li><li>JD Edwards EnterpriseOne</li></ul>
-      
+  content: 
+    - '.Net'
+    - 'C#'
+    - 'Windows Phone App'
+
 startup:
   name: Startup Journey
   header: Learn technologies that startups use to iterate quickly
   image: /images/startup.jpg
-  content: <ul><li>Jenkins</li><li>RubyOnRails</li><li>Rspec</li></ul>
-      
+  content: 
+    - Git
+    - Ruby On Rails
+    - RSpec
+    - Continuous Integration
+
 mobile:
   name: Mobile Journey
   header: Learn to build mobile applications
   image: /images/mobile.jpg
-  content: <ul><li>Android</li><li>iOS</li><li>HTML5/Hybrid</li></ul>
-    
+  content: 
+    - Android Development
+    - iOS Development
+    - HTML5 / Hybrid
+
 ruby:
   name: Ruby Journey
   header: Learn the Ruby Programming Language with RubyOnRails
   image: /images/ruby.jpg
-  content: <ul><li>Ruby Fundamentals</li><li>Rails MVC</li><li>Tips & tricks</li></ul>
-     
+  content: 
+    - Ruby Fundamentals
+    - Ruby On Rails
+    - Building Ruby Gems
+
 html:
-  name: HTML & CSS
+  name: Base Journey
   header: Learn the essentials of web design
   image: /images/html.png
-  content: <ul><li>HTML5</li><li>CSS</li><li>Frameworks</li></ul>
-     
-javascript:
-  name: Javascript The Best Parts
-  header: Learn to program the web with Javascript
-  image: /images/javascript.jpg
-  content: <ul><li>Javascript Basics</li><li>AngularJS</li><li>jQuery</li></ul>
-     
-         
+  content: 
+    - 'HTML5 & CSS'
+    - 'Javascript Fundamentals'
