@@ -1,0 +1,64 @@
+---
+title: Ruby on Rails From Scratch
+slogan: Learn to build your own app from scratch!
+---
+
+<%= partial "navigation" %>
+<div class="banner" style="background-color: #6ccaca;">
+  <div class="container">
+  <div class="row">
+    <div class="col-sm-9">
+      <h1>
+        <%= current_page.data.title %>
+      </h1>
+      <h2>
+          <%= current_page.data.slogan %>
+      </h2> 
+    </div>
+    <div class="col-sm-3">
+      <img src="../../images/ruby.png" class="ruby">
+    </div>
+  </div>
+  </div>
+</div>
+<div class="main container ">
+
+
+  <div class="row"> 
+    <div class="col-sm-2"> <!-- required for floating -->
+        <!-- Nav tabs -->
+        <ul class="nav nav-tabs tabs-left">
+          <li class="active"><a href="#home" data-toggle="tab">Intro</a></li>
+          <li><a href="#profile" data-toggle="tab">Level 1: Models</a></li>
+          <li><a href="#messages" data-toggle="tab">Level 2: Views</a></li>
+          <li><a href="#settings" data-toggle="tab">Level 3: Controllers</a></li>
+          <li><a href="#options" data-toggle="tab">Level 4: Routes</a></li>
+        </ul>
+    </div>
+    <div class="col-sm-6">
+      <!-- Tab panes -->
+      <div class="tab-content">
+        <div class="tab-pane active" id="home">
+          <%= partial "lesson01" %>
+        </div>
+        <div class="tab-pane" id="profile"><%= partial "lesson02" %></div>
+        <div class="tab-pane" id="messages"><%= partial "lesson03" %></div>
+        <div class="tab-pane" id="settings"><%= partial "lesson04" %></div>
+        <div class="tab-pane" id="options"><%= partial "lesson05" %></div>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="assignments-container">
+        <%= partial "assignments" %>
+      </div>
+    </div> 
+  </div> 
+
+
+  
+</div>
+
+
+
+
+

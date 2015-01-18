@@ -1,0 +1,363 @@
+@import "bootstrap"
+@import url(http://fonts.googleapis.com/css?family=Raleway:500,700,400,300)
+
+body
+  background-color: #f5f5f5
+
+*
+  font-weight: 200
+
+.maximize-height
+  height: 100%
+
+.main
+  margin-bottom: 50px
+  padding: 40px 0 
+  overflow: hidden
+  background-color: white
+  position: relative
+  top: -210px
+  p
+    font-size: 16px
+    color: #666
+
+
+/*
+ *
+ * Navbar  
+ *
+ */
+
+
+nav
+  background-color: rgba(255, 255, 255, 0.97) !important
+
+.navbar-inverse .navbar-nav > .active > a
+  background-color: #6ccaca
+  color: white
+
+.navbar-inverse .navbar-nav > .active > a:hover
+  background-color: #6ccaca
+
+
+.logo
+  width: 40px
+  height: 40px
+  margin-top: -10px
+
+
+.panel-default
+  border-color: #efefef
+
+.panel-default > .panel-heading
+  background-color: #efefef
+  border-color: #efefef
+
+.panel-default > .panel-heading + .panel-collapse > .panel-body
+  border-color: #efefef
+
+.navbar-inverse .navbar-brand, .navbar-inverse .navbar-nav > li > a
+  color: #6ccaca
+
+.navbar-inverse .navbar-nav > li > a:hover
+  color: #6ccaca
+
+
+
+
+.navbar-inverse .navbar-brand
+  font-family: 'Raleway', sans-serif
+
+
+.navbar-inverse
+  border-bottom: 3px solid #eee !important
+  // border-color: #eee !important
+
+
+/*
+ *
+ * Helper  
+ *
+ */
+
+.delete-padding
+  padding: 0px !important
+
+
+/*
+ *
+ * Background  
+ *
+ */
+
+
+.bg-upper
+  background-color: #eee
+  height: 250px
+
+.bg-below
+  background-color: #3498db
+
+
+
+/*
+ *
+ * Accordion  
+ *
+ */
+
+.nav-tabs > li > a
+  padding-left: 30px
+  border: none
+
+.nav-tabs > li > a:hover
+  color: #333
+  border-radius: 0px
+
+.tabs-left, .tabs-right
+  border-bottom: none
+
+
+.tabs-left
+//   border-right: none
+  background-color: #eee
+
+.tabs-left > li, .tabs-right > li
+  float: none
+
+.tabs-left > li
+
+.tabs-right > li
+
+
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus
+  border: none 
+  color: white
+  background-color: #6ccaca
+  border-radius: 0px
+
+.tabs-left > li > a
+  margin-right: 0
+  display: block
+  color: #6ccaca
+
+.sideways
+  margin-top: 50px
+  border: none
+  position: relative
+  > li
+    height: 20px
+    width: 120px
+    margin-bottom: 100px
+    > a
+      text-align: center
+  &.tabs-left
+    left: -50px
+  &.tabs-right
+    right: -50px
+    > li
+      -webkit-transform: rotate(90deg)
+      -moz-transform: rotate(90deg)
+      -ms-transform: rotate(90deg)
+      -o-transform: rotate(90deg)
+      transform: rotate(90deg)
+  &.tabs-left > li
+    -webkit-transform: rotate(-90deg)
+    -moz-transform: rotate(-90deg)
+    -ms-transform: rotate(-90deg)
+    -o-transform: rotate(-90deg)
+    transform: rotate(-90deg)
+
+/*
+ *
+ * Video   
+ *
+ */
+
+
+.video-wrapper
+  position: relative
+  padding-bottom: 56.25%
+  padding-top: 25px
+  height: 0
+  iframe
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100% 
+
+/*
+ *
+ * Banner  
+ *
+ */
+
+.banner
+  padding: 120px 0 300px 0
+  h1, h2
+    color: white
+    font-family: 'Raleway', sans-serif
+
+  h2
+    margin-top: 4px
+
+
+
+/*
+ *
+ * Assignments Container  
+ *
+ */
+
+.assignments-container
+  padding-right: 24px
+  .panel-group .panel
+    margin-bottom: 12px
+
+/*
+ *
+ * Buttons  
+ *
+ */
+
+.btn-custom
+  padding: 2px 16px
+  margin-top: -3px
+  background-color: #31bf37
+  border-color: #31bf37
+  &:hover
+    background-color: darken(#31bf37, 10%)
+    border-color: darken(#31bf37, 10%)
+
+
+
+/*
+ *
+ * Animation 
+ *
+ */
+
+.ruby
+  position: absolute
+  right: 160px
+  width: 200px
+  height: 149px
+  -webkit-animation: float ease 2s infinite
+  -moz-animation: float ease 2s infinite
+  -ms-animation: float ease 2s infinite
+  animation: float ease 2s infinite
+  
+@-webkit-keyframes float 
+  0%
+    top: 0px
+  50% 
+    top: 5px 
+  100% 
+    top: 0px 
+@-moz-keyframes float 
+  0%
+    top: 0px
+  50%
+    top: 5px 
+  100% 
+    top: 0px 
+@-ms-keyframes float 
+  0%
+    top: 0px
+  50% 
+    top: 5px 
+  100% 
+    top: 0px 
+@keyframes float 
+  0%
+    top: 0px
+  50% 
+    top: 5px 
+  100% 
+    top: 0px 
+
+
+
+    /*
+     *
+     * Profile  
+     *
+     */
+
+
+
+body.profile
+
+  .circle
+    border-radius: 50%
+    width: 120px
+    height: 120px
+    background-color: #888
+    border: 3px solid white
+    margin: 0 auto 
+    overflow: hidden
+    img
+      width: 120px
+      height: 120px
+
+  .meta-info
+    text-align: center
+    font-family: 'Raleway', sans-serif
+
+
+
+  .gold-coin
+    width: 65px
+    height: 65px
+    margin: 0 auto
+    margin-top: 40px
+    border-radius: 50%
+    background-color: #ca922f
+
+
+  .silver-coin
+    width: 65px
+    height: 65px
+    margin: 0 auto
+    margin-top: 40px
+    border-radius: 50%
+    background-color: #909295
+
+
+  .main
+    top: -240px
+
+
+  .progress
+    height: 40px
+    border-radius: 0px
+    -webkit-box-shadow: none
+    box-shadow: none
+
+
+
+  .progress-bar
+    line-height: 40px
+
+
+
+  .rec-badge
+    width: 150px
+    height: 150px
+    display: block
+    border-radius: 50%
+    // background-color: #eee
+    margin: 0 auto
+    margin-bottom: 40px
+    text-align: center
+    padding-top: 38px
+    border: 2px dashed #888
+    h2
+      color: #555
+      margin: 12px 0
+    h5
+      color: #888
+      margin: 4px 0
+
+
