@@ -1,0 +1,57 @@
+google:
+  name: Google Journey
+  header: Learn technologies for a career with Google. These are technologies used by developers who work at google.
+  image: /images/google.png
+  courses: 
+    - Web Development with Go
+    - BigTable
+    - AngularJS
+    - Google App Engine
+
+ruby:
+  name: Ruby Journey
+  header: Learn the Ruby programmign ecosystem. Ruby on Rails developers are usually the best paid developers in the industry.
+  image: /images/ruby.png
+  courses: 
+    - Ruby Fundamentals
+    - Ruby on Rails
+    - Building Gems
+    - Ruby Best Practices
+    - Test Driven Development
+
+ms:
+  name: Microsoft Journey
+  header: Learn technologies for a career with Microsoft. These are technologies used by microsoft employees and enterprisese that utilize microsoft development platform.
+  image: /images/microsoft.png
+  courses: 
+    - '.Net'
+    - 'C#'
+    - 'Windows Phone App'
+
+facebook:
+  name: Facebook Journey
+  header: Learn technologies used by the developers at facebook. Choose this journey if you aspire to join companies inspired by facebook.
+  image: /images/facebook.png
+  courses: 
+    - PHP Fundamentals
+    - Hack Fundamentals
+    - Functional Programming with Haskell
+
+startup:
+  name: Startup Journey
+  header: Learn technologies that startups use to iterate quickly. Choose this path if you wish to build and launch your own company.
+  image: /images/startup.png
+  courses: 
+    - Git
+    - Ruby On Rails
+    - RSpec
+    - Continuous Integration
+
+mobile:
+  name: Mobile Journey
+  header: Learn to build mobile applications on all platform. This journey will make you extremely versatile with all the mobile platforms.
+  image: /images/mobile.png
+  courses: 
+    - Android Development
+    - iOS Development
+    - HTML5 / Hybrid

@@ -1,0 +1,26 @@
+---
+title: View our Journeys
+name: Journeys
+slogan: A billion dollar journey begins with a single click
+---
+<div id='journeys' class='row'>
+  <% data.journeys.each do |_, journey| %>
+  <div class='col-sm-4 col-md-4'>
+    <div class='thumbnail'>
+      <img src="<%= journey[:image] %>" width='200' height='200' />
+      <div class='caption'>
+        <h3><%= journey[:name] %></h3>
+        <p class='detail'><%= journey[:header] %></p>
+        <h4>Courses</h4>
+        <p class='courses'>
+          <% journey[:courses].each do |course| %>
+            <span class='label label-lambda'><%= course %></span>
+          <% end %>
+        </p>
+        <p class='start'><a href='#' class='btn btn-lambda btn-block'>Start Journey</a></p>
+      </div>
+    </div>
+  </div>
+  <% end %>
+</div>
+
